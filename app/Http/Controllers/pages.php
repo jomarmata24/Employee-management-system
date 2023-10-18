@@ -9,7 +9,7 @@ class pages extends Controller
     public function index(){
         return view('components/header')
         . view('components/navbar')
-        . view('/dashboard')
+        . view('pages/dashboard')
         . view('components/footer');
     }
 }
