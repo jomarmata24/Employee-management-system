@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pages;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use App\Http\Controllers\pages;
 |
 */
 Route::get('/',[pages::class, 'index']);
-
+Route::get('auth',[AuthController::class, 'login']);
 /* Route::get('/', function () {
     return view('welcome');
 }); */
